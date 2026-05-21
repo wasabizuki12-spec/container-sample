@@ -1,5 +1,7 @@
 # nginxを使用
-FROM nginx:alpine
+# FROM nginx:alpine
+FROM public.ecr.aws/nginx/nginx:alpine
+
 
 # 作成したHTMLファイルをnginxのデフォルトの公開ディレクトリにコピー
 COPY index.html /usr/share/nginx/html/index.html
